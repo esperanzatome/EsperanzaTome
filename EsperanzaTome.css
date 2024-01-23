@@ -1,0 +1,142 @@
+.container{
+    background-color: #18251d;
+    color: #59ac5f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name_container{
+    font-family: 'Satisfy', cursive;
+    margin: 40px;
+    margin-bottom: 0px;
+    font-size: -webkit-xxx-large;
+    animation-name: anim-name,anim-brightness;
+    animation-duration: 4s,2s;
+    animation-iteration-count: 1,infinite;
+    animation-direction: normal,alternate;
+}
+img{
+    width: 315px;
+    animation-name: anim-name,anim-brightness;
+    animation-duration: 8s,2s;
+    animation-iteration-count: 1,infinite;
+    animation-direction: normal,alternate;
+
+}
+.title_container{
+    font-family: 'Kanit', sans-serif;
+    font-size: xx-large;
+    animation-name: anim-name;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+.title{
+    display: flex;
+    animation-name: anim-word;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 13s;
+
+}
+.word_title_Full{
+    margin-right: 10px;
+    animation-name: anim-word;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 11s;
+    
+}
+.word_title_stack{
+    margin-right: 10px;
+    animation-name: anim-word;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 11.1s;
+   
+}
+.word_title_development{
+    margin-right: 10px;
+    animation-name: anim-word;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 11.2s;
+  
+}
+.contact_container{
+    margin: 15px;
+    display: flex;
+    width: 410px;
+    justify-content: space-around;
+    animation-name: anim-name;
+    animation-duration: 11.2s;
+    animation-iteration-count: 1;
+   
+}
+.tlf_container{
+    display: flex;
+}
+.tlf_icon {
+    margin-right: 10px;
+    animation-name: tlf-shaking;
+    animation-duration: 0.2s;
+    animation-iteration-count: 5;
+    animation-delay: 12s;
+}
+.mail_container{
+    display: flex;
+}
+.mail_icon{
+    margin-right: 5px;
+}
+    @keyframes anim-name {
+    0% {
+      color: black;
+      transform: scale(0);
+      opacity: 0;
+     
+    }
+   
+    50% {
+     
+      transform: scale(0);
+      opacity: -4;
+ 
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      
+    }
+  }
+  
+@keyframes anim-brightness{
+    0%{
+        filter: brightness(1);
+    }
+    50%{
+        filter:brightness(1.25)
+    }
+    100%{
+        filter:brightness(1.5);
+    }
+}
+@keyframes anim-word{
+    0%{
+        filter: brightness(1);
+    }
+    50%{
+        filter:brightness(1.5)
+    }
+    100%{
+        filter:brightness(1.75);
+    }
+}
+@keyframes tlf-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(1px) }
+    50% { transform: translateX(0) }
+    75% { transform: translateX(-1px) }
+    100% { transform: translateX(0) }
+   }
+ 
+
